@@ -1,2 +1,1 @@
-# bsvihrajr.github.io
-Blair's Workshop
+# Blair's Workshop
