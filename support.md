@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Support
-permalink: /support/
+title: Support Us
+permalink: /support-us/
 ---
-
-TODO
+# TODO
