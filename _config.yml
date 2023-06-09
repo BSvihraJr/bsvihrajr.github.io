@@ -21,7 +21,7 @@
 title: Media Woodworking
 email: general@mediawoodworking.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Start woodworking now with our free beginner curriculum.
+  Start woodworking now.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bsvihrajr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -32,8 +32,6 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - beginner-curriculum.md
-  - courses.md
   - reference.md
   - support.md
 
@@ -42,6 +40,8 @@ youtube_username: mediawoodworking
 
 collections:
   courses:
+    output: false
+  references:
     output: true
 
 # Exclude from processing.
