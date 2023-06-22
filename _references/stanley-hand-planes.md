@@ -26,3 +26,9 @@ todo: Build category dynamically at compile time, and add a page (consider using
       {% endif %}
     {% endfor %}
 </ul>
+# Additional resources
+
+| Resource |
+| - |
+| [Patrick A. Leach's Stanley Plane Database](http://www.supertool.com/StanleyBG/stan0a.html) |
+| [Stanley Tools [Catalog] by Stanley Rule & Level Co.](https://archive.org/details/StanleyTools1900/mode/2up) |

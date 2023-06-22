@@ -32,6 +32,7 @@ plugins:
   - jekyll-feed
 
 header_pages:
+  - beginner-curriculum.md
   - reference.md
   - support.md
 
@@ -40,7 +41,7 @@ youtube_username: mediawoodworking
 
 collections:
   courses:
-    output: false
+    output: true
   references:
     output: true
 

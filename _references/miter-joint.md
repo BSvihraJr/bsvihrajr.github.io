@@ -16,3 +16,8 @@ common-joint: true
 # Related joints
 - Mitered Dovetail Joint
 - Butt Joint
+
+https://www.youtube.com/watch?v=VignpjIbkVE
+https://www.youtube.com/watch?v=fXfATT6SBPU
+https://www.youtube.com/watch?v=XDhZXOFRZpE
+https://www.youtube.com/watch?v=NomRxPUY2Nc

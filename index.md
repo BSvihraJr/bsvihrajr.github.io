@@ -5,7 +5,7 @@
 layout: home
 list_title: Updates
 ---
-Welcome to Media Woodworking.
+Follow the [Beginner Curriculum](/beginner-curriculum/) to start your woodworking journey.
 
 [View the woodworking reference database.](/reference/)
 
