@@ -27,7 +27,7 @@ url: "https://bsvihrajr.github.io" # the base hostname & protocol for your site,
 
 
 # Build settings
-theme: minima
+remote-theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
