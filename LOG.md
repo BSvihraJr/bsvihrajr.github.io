@@ -52,3 +52,6 @@ Restart from the ground up with this:
 
 bundle exec jekyll new --force --skip-bundle --blank .
 
+Following https://jekyllrb.com/docs/step-by-step/01-setup/
+
+bundle exec jekyll serve
