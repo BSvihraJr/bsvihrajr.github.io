@@ -1,0 +1,11 @@
+<header>
+    <a class="logo" href="/">Media Woodworking</a>
+    <nav>
+        <ul class="nav__links">
+            {% for item in site.data.navigation %}
+            <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <a class="cta" href="#"><button>Contact</button></a>
+</header>
