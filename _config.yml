@@ -1,6 +1,0 @@
-title: Media Woodworking
-email: general@mediawoodworking.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Start woodworking now.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://bsvihrajr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
