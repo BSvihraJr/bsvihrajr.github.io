@@ -10,8 +10,6 @@ Parent page: <a href="{{ page_parent.url }}">{{ page_parent.title }}</a>
 {% endif %}
 {% endif %}
 
-{{ content }}
-
 {% assign filtered_pages = site.pages | where: 'reference_parent', page.reference_name %}
 {% if filtered_pages and filtered_pages.size != 0%}
 <br/>
@@ -22,3 +20,5 @@ Parent page: <a href="{{ page_parent.url }}">{{ page_parent.title }}</a>
   {% endfor %}
 </ul>
 {% endif %}
+
+{{ content }}
