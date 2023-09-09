@@ -1,0 +1,55 @@
+.page {
+    padding: 1rem; // Entire page contents area under the header
+}
+
+.page h1 {
+    font-size: 2.25rem;
+    color: #333333;
+    text-decoration: none;
+}
+.page h2 {
+    padding: 1rem 0 0 0;
+    font-size: 1.25rem;
+    color: #333333;
+    text-decoration: none;
+}
+
+.page-parent {
+    font-size: 1rem;
+    color: #333333;
+    text-decoration: none;
+    padding: 0.25rem 0 0 0;
+}
+.page-parent a {
+    color: #267438;
+}
+
+.page-children li {
+    list-style-type: none;
+}
+
+.page-children li a {
+    font-size: 1rem;
+    color: #267438;
+    text-decoration: none;
+}
+
+// Tables
+
+table {
+    border-collapse: collapse;
+}
+thead {
+    background-color: #82C191;
+    color: white;
+  }
+th, td {
+    border: 1px solid #DADADA;
+    padding: 6px;
+}
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+}

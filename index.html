@@ -2,8 +2,10 @@
 layout: default
 title: Home
 ---
-<h2><a href="/pages/tutorials.html">Tutorials</a></h2>
-{% include index_children.html parent='tutorials' %}
-<br/>
-<h2><a href="/pages/reference.html">Reference</a></h2>
-{% include index_children.html parent='reference' %}
+<div class="index-category">
+    <p><a href="/pages/tutorials.html">Tutorials</a></p>
+    {% include index_children.html parent='tutorials' %}
+    <br/>
+    <p><a href="/pages/reference.html">Reference</a></p>
+    {% include index_children.html parent='reference' %}
+</div>

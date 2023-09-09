@@ -1,24 +1,25 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-{% if page.reference_parent %}
-{% assign page_parent = site.pages | where: 'reference_name', page.reference_parent | first %}
-{% if page_parent %}
-Parent page: <a href="{{ page_parent.url }}">{{ page_parent.title }}</a>
-<br/>
-{% endif %}
-{% endif %}
+<div class="page">
+  <h1>{{ page.title }}</h1>
+  {% if page.reference_parent %}
+  {% assign page_parent = site.pages | where: 'reference_name', page.reference_parent | first %}
+  {% if page_parent %}
+  <p class="page-parent">Parent page: <a href="{{ page_parent.url }}">{{ page_parent.title }}</a></p>
+  {% endif %}
+  {% endif %}
 
-{% assign filtered_pages = site.pages | where: 'reference_parent', page.reference_name %}
-{% if filtered_pages and filtered_pages.size != 0%}
-<br/>
-<h2>Sub-pages</h2>
-<ul>
-  {% for page in filtered_pages %}
-    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-  {% endfor %}
-</ul>
-{% endif %}
+  {% assign filtered_pages = site.pages | where: 'reference_parent', page.reference_name %}
+  {% if filtered_pages and filtered_pages.size != 0%}
 
-{{ content }}
+  <h2>Sub-pages</h2>
+  <ul class="page-children">
+    {% for page in filtered_pages %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {{ content }}
+</div>
