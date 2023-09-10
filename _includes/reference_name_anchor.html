@@ -1,0 +1,4 @@
+{% assign reference_page = site.pages | where: 'reference_name', include.reference_name | first %}
+{% if reference_page %}
+<a href="{{ reference_page.url }}">{{ reference_page.title }}</a>
+{% endif %}
