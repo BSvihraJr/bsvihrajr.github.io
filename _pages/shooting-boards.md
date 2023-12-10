@@ -1,8 +1,15 @@
 ---
-title: Shooting Boards
+title: Shooting boards
 reference_name: shooting-boards
 reference_parent: tools
 boards:
+- board:
+  instructor: Matt Estlea
+  video: https://youtu.be/furJJWgS5Jg?si=r6P-xxFM9Sqkau9U&t=145
+  building-plans:
+  type: Makeshift End/Edge
+  fence: Adjustable
+  outer-fence:
 - board:
   instructor: Daughters Wood Co (Mike Pekovich design)
   video: https://www.youtube.com/watch?v=Mtvpk0g3aDs
@@ -88,29 +95,30 @@ boards:
   fence: Fixed, Removable
   outer-fence: 
 ---
-<h2>Beginner Level Shooting Boards</h2>
-
-<table>
-    <thead>
-        <tr>
-            <th>Instructor</th>
-            <th>Video</th>
-            <th>Building plans</th>
-            <th>Type</th>
-            <th>Fence</th>
-            <th>Outer fence</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for item in page.boards %}
-        <tr>
-            <td>{{item.instructor}}</td>
-            <td><a href="{{item.video}}">Video</a></td>
-            <td><a href="{{item.building-plans}}">Plans</a></td>
-            <td>{{item.type}}</td>
-            <td>{{item.fence}}</td>
-            <td>{{item.outer-fence}}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<h2>Beginner level shooting boards</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+      <thead class="thead-light">
+          <tr>
+              <th scope="col">Instructor</th>
+              <th scope="col">Video</th>
+              <th scope="col">Building plans</th>
+              <th scope="col">Type</th>
+              <th scope="col">Fence</th>
+              <th scope="col">Outer fence</th>
+          </tr>
+      </thead>
+      <tbody>
+          {% for item in page.boards %}
+          <tr>
+              <td>{{item.instructor}}</td>
+              <td><a href="{{item.video}}">Video</a></td>
+              <td>{% if item.building-plans %}<a href="{{item.building-plans}}">Plans</a>{% endif %}</td>
+              <td>{{item.type}}</td>
+              <td>{{item.fence}}</td>
+              <td>{{item.outer-fence}}</td>
+          </tr>
+          {% endfor %}
+      </tbody>
+  </table>
+</div>

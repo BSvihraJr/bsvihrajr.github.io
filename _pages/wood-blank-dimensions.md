@@ -1,5 +1,5 @@
 ---
-title: Wood Blank Dimensions
+title: Wood blank dimensions
 reference_name: wood-blank-dimensions
 reference_parent: materials
 ---
